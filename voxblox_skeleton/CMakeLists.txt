@@ -60,6 +60,11 @@ cs_add_executable(skeletonizer
 )
 target_link_libraries(skeletonizer ${PROJECT_NAME})
 
+cs_add_executable(online_skeletonizer
+  src/online_skeletonizer.cpp
+)
+target_link_libraries(online_skeletonizer ${PROJECT_NAME})
+
 cs_add_executable(skeleton_eval
   src/skeleton_eval.cpp
 )
